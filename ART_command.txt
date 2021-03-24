@@ -1,0 +1,28 @@
+5X, 100bp semi-simulated paired-end sequencing data
+/art_bin_MountRainier/art_illumina -ss HS20 -i Haplotype_1_no_gap.fa -f 2.5 -l 100 -m 500 -s 50 -p -o Hap1_read (The random seed for the run: 1559048606)
+/art_bin_MountRainier/art_illumina -ss HS20 -i Haplotype_2_no_gap.fa -f 2.5 -l 100 -m 500 -s 50 -p -o Hap2_read  (The random seed for the run: 1559048823)
+cat Hap1_read1.fq Hap2_read1.fq > 5X_100bp_read1.fq
+cat Hap1_read2.fq Hap2_read2.fq > 5X_100bp_read2.fq
+
+30X, 100bp semi-simulated paired-end sequencing data
+/art_bin_MountRainier/art_illumina -ss HS20 -i Haplotype_1_no_gap.fa -f 15 -l 100 -m 500 -s 50 -p -o Hap1_read (The random seed for the run: 1559207416)
+/art_bin_MountRainier/art_illumina -ss HS20 -i Haplotype_2_no_gap.fa -f 15 -l 100 -m 500 -s 50 -p -o Hap2_read  (The random seed for the run: 1559209822)
+cat Hap1_read1.fq Hap2_read1.fq > 30X_100bp_read1.fq
+cat Hap1_read2.fq Hap2_read2.fq > 30X_100bp_read2.fq
+
+30X, 250bp semi-simulated paired-end sequencing data
+/art_bin_MountRainier/art_illumina -ss MSv1 -na -i Haplotype_1_no_gap.fa -f 15 -l 250 -m 800 -s 50 -p -o Hap1_read (The random seed for the run: 1580732756)
+/art_bin_MountRainier/art_illumina -ss MSv1 -na -i Haplotype_2_no_gap.fa -f 15 -l 250 -m 800 -s 50 -p -o Hap2_read  (The random seed for the run: 1580733149)
+cat Hap1_read1.fq Hap2_read1.fq > 30X_250bp_read1.fq
+cat Hap1_read2.fq Hap2_read2.fq > 30X_250bp_read2.fq
+
+60X, 100bp semi-simulated paired-end sequencing data
+/art_bin_MountRainier/art_illumina -ss HS20 -i Haplotype_1_no_gap.fa -f 30 -l 100 -m 500 -s 50 -p -o Hap1_read (The random seed for the run: 1559288440)
+/art_bin_MountRainier/art_illumina -ss HS20 -i Haplotype_2_no_gap.fa -f 30 -l 100 -m 500 -s 50 -p -o Hap2_read (The random seed for the run: 1559290951)
+cat Hap1_read1.fq Hap2_read1.fq > 60X_100bp_read1.fq
+cat Hap1_read2.fq Hap2_read2.fq > 60X_100bp_read2.fq
+
+
+
+
+
