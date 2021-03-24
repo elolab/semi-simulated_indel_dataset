@@ -1,5 +1,6 @@
 # semi-simulated_indel_dataset
 The semi-simulated datasets can be downloaded from: 10.5281/zenodo.4630389
+
 The semi-simulated datasets were generated based on reference sequence of human genome hg19 chromosome 1. Indels were adopted from HuRef (Levy S, Sutton G, Ng PC, et al. The diploid genome sequence of an individual human. PLoS Biol. 2007; 5:2113–2144) of chromosome 1.
 1. The original HuRef indels were based on hg18 coordinates. We used UCSC genome browser lift-over tool to convert them to hg19 coordinates.
 2. We normalized HuRef indels and filtered out inconsistent indels with a similar algorithm as vt tool (Tan A, Abecasis GR, Kang HM. Unified representation of genetic variants. Bioinformatics 2015). The details of dataset descriptions can be found in Ning, et al.
