@@ -1,0 +1,5 @@
+kning@kning-Latitude-5480:~/Bio/Indels_calling/mfranberg_simulated/Venter/chr1/re-re-build_Venter_Genome/4.svsim/right_version$ python create_indel_genome.py /home/kning/Bio/Indels_calling/mfranberg_simulated/Venter/chr1/svsim_haplotypes/Repeat/left-align/left.align.truthset/Prove.which.is.correct.truth.set/chr1.fa Haplotype_1.txt /home/kning/seagate/clean_clean_genome/Haplotype_1.fa
+kning@kning-Latitude-5480:~/Bio/Indels_calling/mfranberg_simulated/Venter/chr1/re-re-build_Venter_Genome/4.svsim/right_version$ python create_indel_genome.py /home/kning/Bio/Indels_calling/mfranberg_simulated/Venter/chr1/svsim_haplotypes/Repeat/left-align/left.align.truthset/Prove.which.is.correct.truth.set/chr1.fa Haplotype_2.txt /home/kning/seagate/clean_clean_genome/Haplotype_2.fa
+
+kning@kning-Latitude-5480:~/seagate/clean_genome$ rsync -v -a --bwlimit=30000 Haplotype_1_no_gap.fa Haplotype_2_no_gap.fa ningwang@head02.btk.fi:/elo/genomics/ceph/Genomics_pipeline_validation_Ning/Indels_callers/Firth/clean_clean_genome
+
