@@ -1,0 +1,5 @@
+tools	Precision	Recall
+Delly	10/114	12/8712
+FermiKit	98/122	96/8712
+Pindel	337/2480	206/8712
+Platypus_A	0/7	0/8712
