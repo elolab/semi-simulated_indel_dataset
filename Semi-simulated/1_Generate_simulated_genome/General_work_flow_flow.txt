@@ -1,0 +1,21 @@
+The Venter was downloaded from ftp://ftp.jcvi.org/pub/data/huref/
+
+Under "get Venter Variants" folder
+1.Parse_chr20.R ----> Chr1.haplotype_1.variants_1.txt, Chr1.haplotype_2.variants_1.txt
+2.Generate_bed.R ----> Bed.haplotype_1.bed, Bed.haplotype_2.bed
+
+Under "lift over" folder
+bed file use UCSC LiftOver tool ----> hglft_genome_1.bed, hglft_genome_2.bed
+3.Parse.Genotype.R ----> chr1.haplotype_1.hg19.txt, chr1.haplotype_2.hg19.txt
+
+Under "variant normalization" folder 
+4.combine.R ----> Venter.truthset.txt
+5.find.left.align2.py ----> Venter.truthset.left.align.txt
+6.Convert.Confused.herter.R ----> Venter_truthset_for_analysis.txt
+
+Under "svsim" folder
+7.svsim.R ----> Haplotype_1.txt, Haplotype_2.txt, Haplotype_1_insertion.txt, Haplotype_2_insertion.txt; variants_truthset.txt
+8.create_indel_genome.py, variation.py, Haplotype_1.txt, Haplotype_2.txt, Haplotype_1_insertion.txt, Haplotype_2_insertion.txt ----> Haplotype_1.fa, Haplotype_2.fa 
+9.calculate.gap.py, Haplotype_1.fa, Haplotype_2.fa ----> Haplotype_1_no_gap.fa, Haplotype_2_no_gap.fa
+
+Haplotype_1_no_gap.fa, Haplotype_2_no_gap.fa go to cluster as original input
