@@ -1,7 +1,7 @@
 The Venter was downloaded from ftp://ftp.jcvi.org/pub/data/huref/
 
 Under "get Venter Variants" folder
-1.Parse_chr20.R ----> Chr1.haplotype_1.variants_1.txt, Chr1.haplotype_2.variants_1.txt
+1.Parse_chr1.R ----> Chr1.haplotype_1.variants_1.txt, Chr1.haplotype_2.variants_1.txt
 2.Generate_bed.R ----> Bed.haplotype_1.bed, Bed.haplotype_2.bed
 
 Under "lift over" folder
@@ -10,7 +10,7 @@ bed file use UCSC LiftOver tool ----> hglft_genome_1.bed, hglft_genome_2.bed
 
 Under "variant normalization" folder 
 4.combine.R ----> Venter.truthset.txt
-5.find.left.align2.py ----> Venter.truthset.left.align.txt
+5.find.left.align.py ----> Venter.truthset.left.align.txt
 6.Convert.Confused.herter.R ----> Venter_truthset_for_analysis.txt
 
 Under "svsim" folder
