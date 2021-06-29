@@ -1,0 +1,1 @@
+RG.2x250.BWA-M.SORTED.SAM.bam	800     SimulatedD
