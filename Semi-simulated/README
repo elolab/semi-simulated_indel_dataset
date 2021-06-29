@@ -9,3 +9,5 @@ The semi-simulated datasets were generated based on reference sequence of human 
 5. We inserted HuRef indels by using svsim (https://github.com/mfranberg/svsim) with our modifications.
 6. We created simulated sequencing reads using the NGS read simulation tool ART⁠ with three different coverages: 5X, 30X and 60X. The read length of simulated sequencing data was 100bp⁠⁠. In addition, we created another simulated sequencing dataset with 30X coverage and 250bp read length
 7. For each dataset, the sequencing coverage was contributed by the two haplotypes with an approximate ratio of 1:1, making it representative of a naturally diploid sample.
+
+1_Generate_simulated_genome: contain the scripts that generated semi-simulated data.
