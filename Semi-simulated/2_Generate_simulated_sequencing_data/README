@@ -4,6 +4,6 @@ Each foldler contain:
 1) ART command line that generate simulated sequencing reads. 
 2) BWA and SamTools command lines that generated BAM files as tools' input. 
 3) Tool excution command lines
-4) initial evaluation process: 1) tools' initial results were processed by vcftools, to keep only indels; 2) with the removed indels vcf files, each tool had a specific R script to extract indels positions and sizes, and then compared with truth set
+4) initial evaluation process: 1) tools' initial results were processed by vcftools (filter.indel.sh), to keep only indels; 2) with the removed indels vcf files, each tool had a specific R script to extract indels positions and sizes, and then compared with truth set
 
 initial evaluation results are separated as deletion.txt and insertion.txt
