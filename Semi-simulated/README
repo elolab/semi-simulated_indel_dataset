@@ -10,4 +10,5 @@ The semi-simulated datasets were generated based on reference sequence of human 
 6. We created simulated sequencing reads using the NGS read simulation tool ART⁠ with three different coverages: 5X, 30X and 60X. The read length of simulated sequencing data was 100bp⁠⁠. In addition, we created another simulated sequencing dataset with 30X coverage and 250bp read length
 7. For each dataset, the sequencing coverage was contributed by the two haplotypes with an approximate ratio of 1:1, making it representative of a naturally diploid sample.
 
-1_Generate_simulated_genome: contain the scripts that generated semi-simulated data.
+1_Generate_simulated_genome: contain the scripts that generated semi-simulated genome.
+2_Generate_simulated_sequencing_data: contain the scripts that generated simulated sequencing reads, alignment of simulated sequencing reads; tools' excution command lines; initial evaluation
