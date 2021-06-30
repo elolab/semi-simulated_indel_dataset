@@ -1,2 +1,0 @@
-deletions.bed and insertion.bed were directly downloaded form: https://eichlerlab.gs.washington.edu/publications/chm1-structural-variation/
-generate_truthset_bed.py & Analysis_truth.R: pick up indels in chromosome 1-22 and chromosome X that larger than 50bp. Also counting indels numbers in size range of 50-500bp and >500bp 
