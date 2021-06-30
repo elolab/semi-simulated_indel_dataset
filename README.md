@@ -1,7 +1,7 @@
 # Codes, scripts, files and truth set of Wang et al. 
 This repository contains all the bash scripts, python scripts, R scripts which generated results of Wang et al. Variant calling tool evaluation for variable size indel calling from targeted and whole genome next generation sequencing data 
 
-The fourth datasets used in Wang et al. can be found here. Inside each folder, there are more descriptions.
+The datasets used in Wang et al. can be found here. Inside each folder, there are more descriptions.
 
 Data availability statement:
 1). The semi-simulated dataset underlying this article are available in a github repository at https://github.com/elolab/semi-simulated_indel_dataset. 
