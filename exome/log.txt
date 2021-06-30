@@ -1,8 +1,0 @@
-for Pindel:
-java -jar /elo/genomics/ceph/Genomics_pipeline_validation_Ning/Ning.Test.Data/software/Picard.Tools/Install.Dir/picard.jar SortVcf I=Pindel_short.vcf O=Pindel_short_index.vcf
-
-
-Some VCF add header manually, as the requirement of hap.py
-
-/hap.py-build/bin/hap.py HG002_GRCh37_GIAB_highconf_CG-IllFB-IllGATKHC-Ion-10X-SOLID_CHROM1-22_v.3.3.2_highconf_triophased.vcf tool.vcf -f HG002_GRCh37_GIAB_highconf_CG-IllFB-IllGATKHC-Ion-10X-SOLID_CHROM1-22_v.3.3.2_highconf_noinconsistent.bed -T exome-target-region.bed.gz -V -X -L --gender male -o tool  -r Homo_sapiens.GRCh37.dna.primary_assembly.fa
-
