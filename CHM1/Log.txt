@@ -1,6 +1,0 @@
-bedtools intersect -a tool.bed -b truthset.bed -wa -wb -f 0.2 -F 0.2 > tool.results.txt
-
-Delly use both PASS and PRECISE flag
-Pindel no flag used
-FermiKit use QUAL >= 5
-Platypus use PASS
