@@ -12,3 +12,4 @@ The semi-simulated datasets were generated based on reference sequence of human 
 
 1_Generate_simulated_genome: contain the scripts that generated semi-simulated genome.
 2_Generate_simulated_sequencing_data: contain the scripts that generated simulated sequencing reads, alignment of simulated sequencing reads; tools' excution command lines; initial evaluation
+3_Results_evaluation: contain evaluation of each tool on different indel size ranges, evaluation of genotype, false positive annotation.
