@@ -1,2 +1,3 @@
 Results.R: the srcipts that generate evaluation results of each tool in different indel size ranges (with and without genotype-match was edited manually)
 Genotype_evaluation.R: the scripts that generate evaluation results of each tool on homozygous precision, heterozygous precision and non-valid genetype proportion.
+Parse_FP.R: first this script pick up FP results of each tools. Then the FP results of each tools was annotated by SimpleRepeats track from UCSC genome browser () 
