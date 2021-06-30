@@ -1,0 +1,9 @@
+deletions.bed and insertion.bed were directly downloaded form: https://eichlerlab.gs.washington.edu/publications/chm1-structural-variation/
+generate_truthset_bed.py & Analysis_truth.R: pick up indels in chromosome 1-22 and chromosome X that larger than 50bp. Also counting indels numbers in size range of 50-500bp and >500bp 
+
+Within each tool folder, it contain tools' command line to generate variant calling result.
+Then the variant calling results were using R script to extract only positions and sizes, and convert into bed file format.
+Together with truth set (deletion_truthset_normalChr.bed & insertion_truthset_normalChr.bed), bedtool was used here to produce evaluation results according to our criteria.
+bedtools intersect -a tool.bed -b truthset.bed -wa -wb -f 0.2 -F 0.2 > tool.results.txt
+
+The evaluation results of each tool was colected manually then thn plot
