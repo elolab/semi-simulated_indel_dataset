@@ -1,0 +1,5 @@
+tools	Precision	Recall
+Delly	924/2062	979/6485
+FermiKit	447/535	463/6485
+Pindel	1378/3281	1392/6485
+Platypus_A	31/204	30/6485
