@@ -1,1 +1,2 @@
 Results.R: the srcipts that generate evaluation results of each tool in different indel size ranges (with and without genotype-match was edited manually)
+Genotype_evaluation.R: the scripts that generate evaluation results of each tool on homozygous precision, heterozygous precision and non-valid genetype proportion.
