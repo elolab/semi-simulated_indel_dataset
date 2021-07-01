@@ -1,0 +1,9 @@
+# MY CODE!!!!!!!!!!!!!!!!!!!!!!! Get insertion sequences from Venter genome
+f = open("Haplotype_2_insertion.txt","r")
+f_insertion = f.readlines()
+n=-1  # hard to give n=n+1 after "return", so first n in return will be n=0
+##
+# Represents a insertion of a sequence in the
+# genome starting at pos and ending at pos + length, either
+# from a another location from_loc or if -1 a random sequence.
+#
