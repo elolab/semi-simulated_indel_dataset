@@ -9,18 +9,15 @@ Each foldler contain:
 initial evaluation results are separated as deletion.txt and insertion.txt
 
 The random seeds for ART are:
-5X
+5X,100bp
 The random seed for Hap1: 1559048606
 The random seed for Hap2: 1559048823
-
-30X
+30X,100bp
 The random seed for Hap1: 1559207416
 The random seed for Hap2: 1559209822
-
-60X
+60X,100bp
 The random seed for Hap1: 1559288440
 The random seed for Hap2: 1559290951
-
 30X,250bp
 The random seed for Hap1: 1580732756
 The random seed for Hap2: 1580733149
