@@ -7,3 +7,20 @@ Each foldler contain:
 4) initial evaluation process: 1) tools' initial results were processed by vcftools (filter.indel.sh), to keep only indels; 2) with the removed indels vcf files, each tool had a specific R script to extract indels positions and sizes, and then compared with truth set
 
 initial evaluation results are separated as deletion.txt and insertion.txt
+
+The random seeds for ART are:
+5X
+The random seed for Hap1: 1559048606
+The random seed for Hap2: 1559048823
+
+30X
+The random seed for Hap1: 1559207416
+The random seed for Hap2: 1559209822
+
+60X
+The random seed for Hap1: 1559288440
+The random seed for Hap2: 1559290951
+
+30X,250bp
+The random seed for Hap1: 1580732756
+The random seed for Hap2: 1580733149
