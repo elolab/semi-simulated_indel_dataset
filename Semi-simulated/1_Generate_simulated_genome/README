@@ -16,7 +16,7 @@ Under "variant normalization" folder: normalize (left align) Venter Indels
 Under "svsim" folder:   
 7.svsim.R ----> Haplotype_1.txt, Haplotype_2.txt, Haplotype_1_insertion.txt, Haplotype_2_insertion.txt; variants_truthset.txt: generate two haplotypes and create truth set;
 8.create_indel_genome.py (from svsim), variation.py (from svsim), Haplotype_1.txt, Haplotype_2.txt, Haplotype_1_insertion.txt, Haplotype_2_insertion.txt ----> Haplotype_1.fa, Haplotype_2.fa: create semi-simulated genome by insert indels into hg19 chr1
-Command: python create_indel_genome.py chr1.fa Haplotype_1.txt Haplotype_1.fa (variation.py from svsim need to be changed, the change details is in 4.svsim)
+Command: python create_indel_genome.py chr1.fa Haplotype_1.txt Haplotype_1.fa (variation.py from svsim need to be changed in order to use non-random insertion sequences, the change details is in 4.svsim)
          python create_indel_genome.py chr1.fa Haplotype_2.txt Haplotype_2.fa
 The original svsim is in : https://github.com/mfranberg/svsim
 9.calculate.gap.py, Haplotype_1.fa, Haplotype_2.fa ----> Haplotype_1_no_gap.fa, Haplotype_2_no_gap.fa: create no gaps genome sequence, which is used in next step to create simulated sequencing reads
