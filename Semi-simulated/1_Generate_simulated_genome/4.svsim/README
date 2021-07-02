@@ -1,4 +1,6 @@
 This is modified part of code of svsim (https://github.com/mfranberg/svsim/blob/master/svsim/variation.py)
+
+Parts that need to be changed
 # MY CODE!!!!!!!!!!!!!!!!!!!!!!! Get insertion sequences from Venter genome
 f = open("Haplotype_2_insertion.txt","r")
 f_insertion = f.readlines()
