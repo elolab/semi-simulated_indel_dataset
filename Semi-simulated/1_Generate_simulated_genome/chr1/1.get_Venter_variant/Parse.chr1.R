@@ -149,33 +149,3 @@ Indel_1 <- Indel_all_ready[Indel_all_ready[,5]=="1/1" | Indel_all_ready[,5]=="1/
 
 write.table(Indel_1,"Chr1.haplotype_1.variants_1.txt",row.names = FALSE,col.names = FALSE,quote = FALSE, sep = "\t")
 write.table(Indel_2,"Chr1.haplotype_2.variants_1.txt",row.names = FALSE,col.names = FALSE,quote = FALSE, sep = "\t")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
