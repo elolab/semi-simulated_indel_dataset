@@ -1,3 +1,4 @@
 The Venter was downloaded from ftp://ftp.jcvi.org/pub/data/huref/
 
 Under "chr1" and "chr2" folders contain files and codes to generate chr1_variants_truthset.txt and chr2_variants_truthset.txt
+chr1 and chr2 combine together as truthset for further steps.
