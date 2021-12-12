@@ -18,5 +18,3 @@ Command: python create_indel_genome.py chr1.fa Haplotype_1.txt Haplotype_1.fa (v
          python create_indel_genome.py chr1.fa Haplotype_2.txt Haplotype_2.fa
 The original svsim is in : https://github.com/mfranberg/svsim
 9.calculate.gap.py, Haplotype_1.fa, Haplotype_2.fa ----> Haplotype_1_no_gap.fa, Haplotype_2_no_gap.fa: create no gaps genome sequence, which is used in next step to create simulated sequencing reads
-
-Haplotype_1_no_gap.fa, Haplotype_2_no_gap.fa as original input for creating simulated sequencing reads
