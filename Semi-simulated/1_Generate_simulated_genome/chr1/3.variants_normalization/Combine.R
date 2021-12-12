@@ -9,24 +9,3 @@ variants <- rbind(homo,heter_1,heter_2)
 variants <- variants[order(variants[,2]),]
 rownames(variants) <- seq(length=nrow(variants))
 write.table(variants,"Venter.truthset.txt",row.names = FALSE,col.names = FALSE,quote = FALSE, sep = "\t")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
