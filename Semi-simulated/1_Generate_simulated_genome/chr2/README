@@ -7,8 +7,8 @@ bed file use UCSC LiftOver tool ----> hglft_genome_1.bed, hglft_genome_2.bed
 3.Parse.Genotype.R ----> chr2.haplotype_1.hg19.txt, chr2.haplotype_2.hg19.txt
 
 Under "variant normalization" folder: normalize (left align) Venter Indels
-4.combine.R ----> Venter.truthset.txt
-5.find.left.align.py ----> Venter.truthset.left.align.txt
+4.combine.R ----> Venter.truthset.chr2.txt
+5.find.left.align.py ----> Venter.truthset.left.align.chr2.txt
 6.Convert.Confused.herter.R ----> Venter_truthset_for_analysis.txt
 
 Under "svsim" folder:   
