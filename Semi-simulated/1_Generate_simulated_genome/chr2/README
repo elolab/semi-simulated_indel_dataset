@@ -4,7 +4,7 @@ Under "get Venter Variants" folder: Pick up Venter Indels
 
 Under "lift over" folder: lift over to hg19
 bed file use UCSC LiftOver tool ----> hglft_genome_1.bed, hglft_genome_2.bed
-3.Parse.Genotype.R ----> chr1.haplotype_1.hg19.txt, chr1.haplotype_2.hg19.txt
+3.Parse.Genotype.R ----> chr2.haplotype_1.hg19.txt, chr2.haplotype_2.hg19.txt
 
 Under "variant normalization" folder: normalize (left align) Venter Indels
 4.combine.R ----> Venter.truthset.txt
