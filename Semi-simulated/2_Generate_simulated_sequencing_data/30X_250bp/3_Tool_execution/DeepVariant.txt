@@ -1,0 +1,10 @@
+OUTPUT_DIR=/250bp_30X_500
+mkdir -p "${OUTPUT_DIR}"
+REF=reference_chr1_chr2.fa
+BAM=RG.250bp_30X_500.BWA-M.SORTED.SAM.bam
+MODEL="DeepVariant-inception_v3-0.7.1+data-wgs_standard/model.ckpt"
+/opt/deepvariant/bin/make_examples --mode calling --ref "${REF}" --reads "${BAM}" --examples "${OUTPUT_DIR}/examples.tfrecord.gz"
+CALL_VARIANTS_OUTPUT="${OUTPUT_DIR}/call_variants_output.tfrecord.gz"
+/opt/deepvariant/bin/call_variants --outfile "${CALL_VARIANTS_OUTPUT}" --examples "${OUTPUT_DIR}/examples.tfrecord.gz" --checkpoint "${MODEL}"
+FINAL_OUTPUT_VCF="${OUTPUT_DIR}/output.vcf.gz"
+/opt/deepvariant/bin/postprocess_variants --ref "${REF}" --infile "${CALL_VARIANTS_OUTPUT}" --outfile "${FINAL_OUTPUT_VCF}"

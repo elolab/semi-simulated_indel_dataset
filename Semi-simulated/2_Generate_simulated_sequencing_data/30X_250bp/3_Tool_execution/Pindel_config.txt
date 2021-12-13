@@ -1,0 +1,1 @@
+RG.250bp_30X_500.BWA-M.SORTED.SAM.bam	500     SimulatedD
