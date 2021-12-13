@@ -1,1 +1,0 @@
-/elo/genomics/ceph/Genomics_pipeline_validation_Ning/Indels_callers/Firth/clean_clean_Simulated/60X/BWA-M/RG.60X.BWA-M.SORTED.SAM.bam	500     SimulatedD
