@@ -1,0 +1,17 @@
+MODEL_VERSION="0.7.1"
+MODEL_NAME="DeepVariant-inception_v3-${MODEL_VERSION}+data-wgs_standard"
+MODEL_HTTP_DIR="https://storage.googleapis.com/deepvariant/models/DeepVariant/${MODEL_VERSION}/${MODEL_NAME}"
+mkdir -p ${MODEL_NAME}
+wget -P ${MODEL_NAME} ${MODEL_HTTP_DIR}/model.ckpt.data-00000-of-00001
+wget -P ${MODEL_NAME} ${MODEL_HTTP_DIR}/model.ckpt.index
+wget -P ${MODEL_NAME} ${MODEL_HTTP_DIR}/model.ckpt.metamkdir -p quickstart-testdata
+OUTPUT_DIR=100bp_5X_500
+mkdir -p "${OUTPUT_DIR}"
+REF=reference_chr1_chr2.fa
+BAM=RG.100bp_5X_500.BWA-M.SORTED.SAM.bam
+MODEL="/DeepVariant-inception_v3-0.7.1+data-wgs_standard/model.ckpt"
+/opt/deepvariant/bin/make_examples --mode calling --ref "${REF}" --reads "${BAM}" --examples "${OUTPUT_DIR}/examples.tfrecord.gz"
+CALL_VARIANTS_OUTPUT="${OUTPUT_DIR}/call_variants_output.tfrecord.gz"
+/opt/deepvariant/bin/call_variants --outfile "${CALL_VARIANTS_OUTPUT}" --examples "${OUTPUT_DIR}/examples.tfrecord.gz" --checkpoint "${MODEL}"
+FINAL_OUTPUT_VCF="${OUTPUT_DIR}/output.vcf.gz"
+/opt/deepvariant/bin/postprocess_variants --ref "${REF}" --infile "${CALL_VARIANTS_OUTPUT}" --outfile "${FINAL_OUTPUT_VCF}"
