@@ -54,10 +54,10 @@ make_plot <- function(file_name,file_name2)
     axis.text.y = element_text(color = "black",size=25),
     axis.title.x = element_blank(),
     axis.title.y = element_blank(),
-    #legend.position = "none",
-    legend.position = "bottom",
-    legend.text = element_text(size=25),
-    legend.title = element_blank(),
+    legend.position = "none",
+    #legend.position = "bottom",
+    #legend.text = element_text(size=25),
+    #legend.title = element_blank(),
     panel.background = element_blank(),
     axis.line.x = element_line(colour="black",size=1),
     axis.line.y = element_blank(),
@@ -69,7 +69,6 @@ make_plot <- function(file_name,file_name2)
                     y = as.numeric(as.character(Results_frame$value))+0.04, 
                     label = item_label,size=6)
   output_name <- paste0(file_name,".tiff")
-  #tiff(filename =output_name,width = 900,height = 400, pointsize = 17)
   tiff(filename ="legend.tiff",width = 900,height = 400, pointsize = 17)
   print(p)
   dev.off()   
@@ -81,69 +80,4 @@ for (i in 1:length(input_list))
 {
   make_plot(input_list[i],input_list2[i])
 }
-
-file_name <- "D_50.txt"
-file_name2 <- "D_50_2.txt"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
