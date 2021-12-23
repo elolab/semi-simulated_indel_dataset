@@ -1,0 +1,9 @@
+Callers D_multiallele D_failed_genotype D_multiallele_pass D_failed_genotype_pass I_multiallele I_failed_genotype I_multiallele_pass I_failed_genotype_pass
+DeepVariant 14 2379 6 702 117 1337 83 484
+DELLY 0 29 0 0 0 20 0 0
+FermiKit 12 162 6 144 66 45 48 35
+GATK_HC 10 0 6 0 45 0 27 0
+Pindel 0 1775 0 749 0 1521 0 968
+Platypus 40 9 15 8 45 1 15 0
+Strelka2 75 0 20 0 38 0 15 0
+VarScan 0 0 0 0 0 0 0 0
