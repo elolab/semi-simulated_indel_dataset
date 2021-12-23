@@ -1,1 +1,1 @@
-
+Parse_FP.R: first this script pick up FP results of each tools. Then the FP results of each tools was annotated by SimpleRepeats track from UCSC genome browser (annotation_simpleRepeat.sh). Then the second part of this script generates the FP sum
