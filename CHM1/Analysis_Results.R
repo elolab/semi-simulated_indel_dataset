@@ -36,69 +36,11 @@ Parse_results <- function(file_name)
 Tool_sets <- c("Delly","FermiKit","GATK","Pindel","Platypus")
 for (i in Tool_sets)
 {
-  file_parse_D <- paste0("F:/University of Turku/PhD_project/Indel_calling/Github/CHM1/Revision/More_bins/results/",i,"/",i,".deletion.results.txt")
-  file_parse_I <- paste0("F:/University of Turku/PhD_project/Indel_calling/Github/CHM1/Revision/More_bins/results/",i,"/",i,".insertion.results.txt")
+  file_parse_D <- paste0("/",i,"/",i,".deletion.results.txt")
+  file_parse_I <- paste0("/",i,"/",i,".insertion.results.txt")
   print(i)
   print("Deletion")
   Parse_results(file_parse_D)
   print("Insertion")
   Parse_results(file_parse_I)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
