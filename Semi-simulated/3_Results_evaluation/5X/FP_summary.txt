@@ -1,0 +1,9 @@
+Total_FP	simpleRepeat_FP	Rest_FP
+DeepVariant	9062	4865	4197
+DELLY	124	98	26
+FermiKit	12	4	8
+GATK_HC	1037	284	753
+Pindel	20216	7612	12603
+Platypus	2939	1505	1434
+Strelka2	1291	630	661
+VarScan	1142	299	843

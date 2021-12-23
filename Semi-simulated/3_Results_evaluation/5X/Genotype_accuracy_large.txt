@@ -1,0 +1,9 @@
+Callers homo_precision heter_precision
+DeepVariant 1 NaN
+DELLY 0.729166666666667 0.148936170212766
+FermiKit NaN NaN
+GATK_HC 1 1
+Pindel 0.602649006622517 0.128878281622912
+Platypus 1 0.166666666666667
+Strelka2 NaN NaN
+VarScan NaN NaN
