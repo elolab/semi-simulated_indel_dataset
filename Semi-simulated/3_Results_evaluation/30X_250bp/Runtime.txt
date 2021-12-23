@@ -1,0 +1,10 @@
+Tool	CPU	CPU_BWA	Mem	Mem_BWA
+DeepVariant	11.3	64	2.35	19.15
+DELLY	12.1	64	 2.41	19.15
+FermiKit	101.5	0	18.07	0
+GATK_HC	43.6	64	4.27	19.15
+Pindel	485.1	64	3.39	19.15
+Platypus	2.1	64	2.15	19.15
+Strelka2	6.7	64	1.95	19.15
+VarScan	104.7	64	2.46	19.15
+
