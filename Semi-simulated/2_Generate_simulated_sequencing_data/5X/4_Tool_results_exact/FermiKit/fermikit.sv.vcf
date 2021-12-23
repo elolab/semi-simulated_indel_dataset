@@ -1,0 +1,16 @@
+##fileformat=VCFv4.1
+##source=htsbox-abreak-r327
+##reference=/data/epouta1/B18010_indel_tool_evaluation/Semi-simulated_chr2/Other_tools/reference/reference_chr1_chr2.fa
+##contig=<ID=chr1,length=249250621>
+##contig=<ID=chr2,length=243199373>
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=INS,Description="Insertion">
+##INFO=<ID=SVLEN,Number=1,Type=Integer,Description="SV length">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End coordinate of this variant">
+##INFO=<ID=QGAP,Number=1,Type=Integer,Description="Length of gap on the query sequence">
+##INFO=<ID=MINMAPQ,Number=1,Type=Integer,Description="Min flanking mapping quality">
+##INFO=<ID=MINSC,Number=1,Type=Integer,Description="Min flanking alignment score">
+##INFO=<ID=MINTIPQ,Number=1,Type=Integer,Description="Min quality/depth flanking the break point">
+##FILTER=<ID=LowSupp,Description="MINTIPQ < 10">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
