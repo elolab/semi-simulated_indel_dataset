@@ -6,4 +6,5 @@ Then the variant calling results were using R script to extract only positions a
 Together with truth set (deletion_truthset_normalChr.bed & insertion_truthset_normalChr.bed), bedtool was used here to produce evaluation results according to our criteria.
 bedtools intersect -a tool.bed -b truthset.bed -wa -wb -f 0.2 -F 0.2 > tool.results.txt
 
-The evaluation results of each tool was colected manually then thn plot
+The evaluation results of each tool was collected manually then then plot
+D_50.txt for plot calculation, D_50_2.txt for plot labeling
