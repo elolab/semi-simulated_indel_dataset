@@ -1,6 +1,7 @@
 Results.R: the srcipts that generate evaluation results of each tool in different indel size ranges (with and without genotype-match was edited manually)
-Genotype_evaluation.R: the scripts that generate evaluation results of each tool on homozygous precision, heterozygous precision and non-valid genetype proportion.
-Parse_FP.R: first this script pick up FP results of each tools. Then the FP results of each tools was annotated by SimpleRepeats track from UCSC genome browser (annotation_simpleRepeat.sh). Then the second part of this script generates the FP summary results according annotation.
+Genotype_homo_hetero.R: the scripts that generate evaluation results of each tool on homozygous precision, heterozygous precision.
+Genotype_non-valid_multiallelic.R: the scripts that generate evaluation results of each tool on counts of non-valid genotype indel calls and multiallelic indel calls.
+mary results according annotation.
 
 Each sequencing setting has a folder. Under each sequencing setting folder, each tool has a folder:
 deletion.txt and insertion.txt are the initial evaluation results of each tool. deletion_results.txt and insertion_results.txt are the tool's indel output, which only positions and sizes are extracted.
