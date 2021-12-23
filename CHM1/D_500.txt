@@ -1,0 +1,6 @@
+tools	FDR	Sensitivity
+Delly	310/887	608/2610
+FermiKit	16/255	251/2610
+GATK	2/2	2/2610
+Pindel	449/1265	835/2610
+Platypus_A	581/721	142/2610

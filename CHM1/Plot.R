@@ -40,7 +40,7 @@ make_plot <- function(file_name,file_name2)
   }
   Results_frame <- data.frame(Results_frame)
   colnames(Results_frame) <- c("Callers","value","category")
-  Results_frame$category <- factor(Results_frame$category, levels = c("Precision","Recall"))
+  Results_frame$category <- factor(Results_frame$category, levels = c("FDR","Sensitivity"))
   
 
   # Plot
@@ -48,41 +48,42 @@ make_plot <- function(file_name,file_name2)
                                 y=as.numeric(as.character(value)),x=Callers))+ 
     geom_bar(stat="identity",color="black", position=position_dodge()) + coord_cartesian(ylim = c(0,1.05))
   p <- p + scale_fill_manual(values=c("#33a02c","#1f78b4"),
-                             labels=c("Precision","Recall"))
+                             labels=c("FDR (FP/CALLS)","Sensitivity (TP/TRUTH)"))
   p <- p + theme(
     axis.text.x = element_text(color = "black",size=30),
     axis.text.y = element_text(color = "black",size=25),
     axis.title.x = element_blank(),
     axis.title.y = element_blank(),
-    legend.position = "none",
-    #legend.position = "bottom",
-    #legend.text = element_text(size=25),
-    #legend.title = element_blank(),
+    #legend.position = "none",
+    legend.position = "bottom",
+    legend.text = element_text(size=25),
+    legend.title = element_blank(),
     panel.background = element_blank(),
     axis.line.x = element_line(colour="black",size=1),
     axis.line.y = element_blank(),
     axis.ticks.x = element_line(colour="black",size=1.25),
     panel.grid.minor = element_line(colour="gray", size=0.5))
-  p <- p + scale_x_discrete(labels=c("Platypus_A"="Platypus","Pindel"="Pindel",
+  p <- p + scale_x_discrete(labels=c("Platypus_A"="Platypus","Pindel"="Pindel","GATK"="GATK HC",
                                      "FermiKit"="FermiKit","Delly"="DELLY"))
-  p <- p + annotate("text", x = c(0.78,1.24,1.78,2.24,2.78,3.24,3.78,4.24), 
+  p <- p + annotate("text", x = c(0.78,1.24,1.78,2.24,2.78,3.24,3.78,4.24,4.78,5.24), 
                     y = as.numeric(as.character(Results_frame$value))+0.04, 
-                    label = item_label,size=7)
+                    label = item_label,size=6)
   output_name <- paste0(file_name,".tiff")
-  tiff(filename =output_name,width = 900,height = 400, pointsize = 17)
-  #tiff(filename ="legend.tiff",width = 900,height = 400, pointsize = 17)
+  #tiff(filename =output_name,width = 900,height = 400, pointsize = 17)
+  tiff(filename ="legend.tiff",width = 900,height = 400, pointsize = 17)
   print(p)
   dev.off()   
 }
 
-input_list <- c("D_50.txt","D_500.txt","I_50.txt","I_500.txt")
-input_list2 <- c("D_50_2.txt","D_500_2.txt","I_50_2.txt","I_500_2.txt")
+input_list <- c("D_50.txt","D_500.txt","D_1000.txt","I_50.txt","I_500.txt","I_1000.txt")
+input_list2 <- c("D_50_2.txt","D_500_2.txt","D_1000_2.txt","I_50_2.txt","I_500_2.txt","I_1000_2.txt")
 for (i in 1:length(input_list))
 {
   make_plot(input_list[i],input_list2[i])
 }
 
-
+file_name <- "D_50.txt"
+file_name2 <- "D_50_2.txt"
 
 
 
