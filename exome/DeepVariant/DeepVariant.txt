@@ -1,0 +1,13 @@
+OUTPUT_DIR=/results_wes/
+REF=hs37d5.fa
+BAM=151002_7001448_0359_AC7F6GANXX_Sample_HG002-EEogPU_v02-KIT-Av5_AGATGTAC_L008.posiSrt.markDup.bam
+MODEL="/DeepVariant-inception_v3-0.7.1+data-wes_standard/model.ckpt"
+CAPTURE_BED=wex_Agilent_SureSelect_v05_b37.baits.slop50.merged.bed
+LOGDIR=/results_wes/
+mkdir -p "${LOGDIR}"
+N_SHARDS=24
+time seq 0 $((N_SHARDS-1)) | parallel --eta --halt 2 --joblog "${LOGDIR}/log" --res "${LOGDIR}" /opt/deepvariant/bin/make_examples --mode calling --ref "${REF}" --reads "${BAM}" --examples "${OUTPUT_DIR}/examples.tfrecord@${N_SHARDS}.gz" --regions "${CAPTURE_BED}" --task {}
+CALL_VARIANTS_OUTPUT="${OUTPUT_DIR}call_variants_output.tfrecord.gz"
+/opt/deepvariant/bin/call_variants --outfile "${CALL_VARIANTS_OUTPUT}" --examples "${OUTPUT_DIR}/examples.tfrecord@${N_SHARDS}.gz" --checkpoint "${MODEL}"
+FINAL_OUTPUT_VCF="${OUTPUT_DIR}output.vcf.gz"
+/opt/deepvariant/bin/postprocess_variants --ref "${REF}" --infile "${CALL_VARIANTS_OUTPUT}" --outfile "${FINAL_OUTPUT_VCF}"
